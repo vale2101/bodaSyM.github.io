@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boda Sebastian & Manuela</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'EB Garamond', serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: flex-start; /* Alinea los elementos en la parte superior */
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      background: url('salmo.jpg') no-repeat center center;
+      background-size: cover;
+      background-attachment: fixed;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    /* Degradado beige detrás del texto */
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, rgba(211, 191, 159, 0.9), rgba(211, 191, 159, 0) 60%);
+      z-index: 1;
+    }
+
+    .container {
+      position: relative;
+      z-index: 2;
+      padding: 20px;
+      max-width: 500px;
+      margin-top: 10px; /* Subí el contenedor más arriba */
+    }
+
+    /* Logo encima del texto */
+    .logo-image {
+      width: 80px;
+      height: auto;
+      margin-bottom: 15px;
+    }
+
+    .verse {
+      font-family: "Playfair Display", serif;
+      font-size: 18px;
+      margin-bottom: 30px;
+      color: #535a18;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 8px 16px;
+      font-size: 18px;
+      color: #000000;
+      background-color: #c1a582;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .cta-button:hover {
+      background-color: rgba(255, 255, 255, 0.5);
+      color: #000;
+    }
+
+    @media (max-width: 600px) {
+      .logo {
+        font-size: 28px;
+      }
+      .subtitle {
+        font-size: 16px;
+      }
+      .cta-button {
+        font-size: 16px;
+        padding: 10px 20px;
+      }
+      .logo-image {
+        width: 80px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div> <!-- Degradado beige -->
+
+  <div class="container">
+    <img src="logoP.png" alt="Logo Boda" class="logo-image">
+    <div class="verse">"El tiempo de Dios es perfecto; si alineamos nuestro tiempo con el Suyo, el engranaje de sus bendiciones gira a nuestro favor" <br> - Isaías 40:31</div>
+    <a href="historia.html" class="cta-button">Entrar</a>
+  </div>
+
+</body>
+</html>
