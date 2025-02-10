@@ -51,14 +51,14 @@
             font-size: 36px;
             font-weight: bold;
             margin-top: 20px;
-            color: #6b6b6b;
+            color: #000000;
         }
         .text-content {
             font-family: 'EB Garamond', serif;
             max-width: 600px;
             font-size: 16px;
             margin-top: 15px;
-            color: #4a4a4a;
+            color: #333232;
             line-height: 1.5;
         }
         .highlight {
@@ -67,10 +67,10 @@
         }
         .signature {
             font-family: 'Dancing Script', cursive;
-            font-size: 28px;
+            font-size: 30px;
             font-weight: bold;
             margin-top: 20px;
-            color: #6b6b6b;
+            color: #000000;
         }
         .vestimenta {
         text-align: center;
@@ -103,14 +103,16 @@
             line-height: 1.5;
         }
         .event-container {
-            margin-top: 30px;
-            padding: 20px;
-            background-color: #f9f4f2;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            max-width: 350px;
-            text-align: left;
-        }
+        margin-top: 30px;
+        padding: 20px;
+        background-color: #f9f4f2;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        max-width: 350px; /* Ajustado para que sea del mismo tamaño */
+        width: 100%; /* Para que se adapte bien en móviles */
+        text-align: left;
+    }
+
         .event-header {
             display: flex;
             align-items: center;
@@ -181,7 +183,7 @@
             padding: 15px;
             border-radius: 10px;
             font-size: 14px;
-            font-style: italic;
+            font-style: "Playfair Display", serif;
             font-weight: bold;
             color: #6b6b6b;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -206,7 +208,7 @@
     }
 
     .confirmacion .mensaje {
-        background: white;
+        background-color: #f9f4f2;
         padding: 15px;
         border-radius: 10px;
         font-size: 14px;
@@ -221,7 +223,7 @@
     .confirmacion .btn-whatsapp {
         display: inline-block;
         background-color: #c4a98d;
-        color: white;
+        color: rgb(0, 0, 0);
         font-size: 16px;
         padding: 10px 18px;
         border-radius: 8px;
@@ -281,7 +283,7 @@
     <div class="event-container">
         <div class="event-header">
             <img src="iglesia.png" alt="Icono Iglesia" class="event-icon">
-            <h2 class="event-title">Ceremonia Religiosa</h2>
+            <h2 class="event-title" style="color: #000000;">Ceremonia Religiosa</h2>
         </div>
         <p class="event-time">16:00 hrs</p>
         <p class="event-description">
@@ -305,7 +307,7 @@
     <div class="event-container">
         <div class="event-header">
             <img src="recepcion.png" alt="Icono recepcion" class="event-icon">
-            <h2 class="event-title">Recepción</h2>
+            <h2 class="event-title" style="color: #000000;">Recepción</h2>
         </div>
         <p class="event-time">19:00 hrs</p>
         <p class="event-description">
@@ -327,7 +329,7 @@
         </div>
     </div>
     <div class="vestimenta">
-        <p style="font-family: 'Dancing Script', cursive;">Código de Vestimenta</p>
+        <p style="font-family: 'Dancing Script', cursive; color: #000000;">Código de Vestimenta</p>
         <p>Formal</p>
         <img src="codigo.png" alt="Código de vestimenta">
         <p class="descripcion">
@@ -338,8 +340,7 @@
     <div style="margin-top: 40px;"></div>
     <div class="regalo-bodas">
         <img src="sobre.png" alt="Sobre de regalo">
-        <h2>Regalo de Bodas</h2>
-        <p>Tu presencia es nuestro mejor regalo.</p>
+        <h2 style="font-family: 'Dancing Script', cursive; color: #000000;">Regalo de Bodas</h2>
         <p><strong>Habrá lluvia de sobres</strong></p>
         <div class="mensaje">
             Con tu bendición, nos ayudarás a construir<br>
@@ -351,7 +352,7 @@
         <h2 style="font-family: 'Dancing Script', cursive;">¿Vas a ser parte de nuestra historia de amor?</h2>
         <p><strong>Confirma tu asistencia</strong></p>
         <div class="mensaje">
-            Da click en el botón antes de la fecha y únete a la celebración.
+            Da click en el botón antes deL 17 de Abril y únete a la celebración.
         </div>
         <a href="https://api.whatsapp.com/send/?phone=573113729991&text=%C2%A1Hola%2C+Sebastian+y+Manuela%21+All%C3%A1+estaremos.+Gracias+por+la+invitaci%C3%B3n%2C+estamos+felices+de+acompa%C3%B1arlos+en+su+gran+d%C3%ADa.&type=phone_number&app_absent=0" 
            class="btn-whatsapp" target="_blank">Confirmar Asistencia</a>
